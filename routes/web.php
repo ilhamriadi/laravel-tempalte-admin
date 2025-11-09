@@ -3,6 +3,16 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
+    return view('forum');
+});
+
+// Forum Routes (SPA)
+Route::get('/forum', function () {
+    return view('forum');
+});
+
+// Admin Dashboard Routes
+Route::get('/admin', function () {
     return view('auth.login');
 });
 
